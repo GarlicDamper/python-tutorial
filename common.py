@@ -129,7 +129,7 @@ def slashfix(path):
 
 def slashfix_open(file, mode):
     """An easy way to use slashfix() and open() together."""
-    return open(slashfix(file), mode)
+    return open(slashfix(file), mode, encoding='utf8')
 
 
 @contextlib.contextmanager
